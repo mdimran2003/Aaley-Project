@@ -1,10 +1,10 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import CommonTittle from "../Common-Tittle";
+import CommonTittle from "../../components/Common-Tittle";
 import AstrologerCard from "./Astrologer-Card";
-import img from "../../../assets/astrologer.png";
-import Search from "../../../widgets/Search";
-import PredictionModal from "../../../components/Prediction-Modal";
+import img from "../../assets/astrologer.png";
+import Search from "../../widgets/Search";
+import PredictionModal from "../../components/Prediction-Modal";
 const astrologerList = [
   {
     image: img,

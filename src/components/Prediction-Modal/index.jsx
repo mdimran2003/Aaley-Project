@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import CommonTittle from "../../pages/AstrologerList/Common-Tittle";
+import CommonTittle from "../../components/Common-Tittle";
 import wedding from "../../assets/wedding.png";
 import consulting from "../../assets/consulting (1).png";
 import heart from "../../assets/jigsaw (1).png";

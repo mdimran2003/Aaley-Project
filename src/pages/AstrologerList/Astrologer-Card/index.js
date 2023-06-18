@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import CommonButton from "../../Common-Button";
-import star from "../../../../assets/star (5).png";
+import CommonButton from "../../../components/Common-Button";
+import star from "../../../assets/star (5).png";
 const AstrologerCard = ({ ratting, img, name, exprience, detail }) => {
   return (
     <div className={Styles.astroCardArea}>

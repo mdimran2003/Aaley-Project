@@ -6,7 +6,7 @@ import TestimonialPage from "./pages/TestimonialPage";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import BookPanditJi from "./pages/BookPanditJi";
-import AstrologerList from "./pages/AstrologerList/Astrologer-List";
+import AstrologerList from "./pages/AstrologerList";
 
 function App() {
   return (
