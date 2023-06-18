@@ -1,0 +1,77 @@
+@import "../../../../public/styles/breakpoints";
+.raiseEnquiry {
+  background-image: url("../../../assets/enquiryback.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 150px;
+
+  @include if-device(desktop) {
+    padding: 30px 50px;
+  }
+
+  @include if-device(tablet) {
+    padding: 30px 50px;
+  }
+
+  @include if-device(largephone) {
+    padding: 30px 50px;
+    height: 100%;
+  }
+
+  @include if-device(phone) {
+    padding: 30px 20px;
+    height: 100%;
+  }
+
+  &__left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    @include if-device(desktop) {
+      width: 50%;
+    }
+
+    @include if-device(tablet) {
+      width: 60%;
+    }
+
+    @include if-device(largephone) {
+      width: 60%;
+    }
+    @include if-device(phone) {
+      width: 60%;
+    }
+
+    & > h2 {
+      font-size: 45px;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+
+    &__textarea {
+      padding: 5px 7px;
+      border: 1px solid #fff;
+      margin: 5px 0;
+      border-radius: 3px;
+      font-size: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid #fff;
+      }
+    }
+
+    &__buttonWidth {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../../public/styles/breakpoints";
+
+.courseTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  @include if-device(phone) {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  &__latest {
+    font-size: 30px;
+    color: #000;
+    text-transform: capitalize;
+
+    @include if-device(phone) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__view {
+    font-size: 20px;
+    color: #cd1a1a;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

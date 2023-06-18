@@ -1,0 +1,14 @@
+@import "../../../../public/styles/breakpoints";
+
+.iframe {
+  width: 50%;
+  @include if-device(tablet) {
+    width: 100%;
+  }
+  @include if-device(largephone) {
+    width: 100%;
+  }
+  @include if-device(phone) {
+    width: 100%;
+  }
+}

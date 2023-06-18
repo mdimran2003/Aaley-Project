@@ -1,0 +1,27 @@
+@import "../../../../../public/styles/breakpoints";
+
+.testimonialCards {
+  background-color: #fff;
+  padding: 50px 20px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  z-index: 20;
+  @include if-device(largephone) {
+    padding: 30px 20px;
+  }
+
+  @include if-device(phone) {
+    padding: 30px 20px;
+  }
+
+  & > h3 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 26px;
+  }
+
+  & > p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,157 @@
+@import "../../../public/styles/breakpoints";
+
+.navbar {
+  background-color: #cd1a1a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  position: sticky;
+  z-index: 9999999999;
+  top: 108px;
+  @include if-device(desktop) {
+    top: 96px;
+  }
+  @include if-device(tablet) {
+    top: 85px;
+  }
+  @include if-device(largephone) {
+    top: 85px;
+  }
+  @include if-device(phone) {
+    top: 60px;
+  }
+  &__container {
+    width: 1180px;
+    display: flex;
+    align-items: center;
+    @include if-device(phone) {
+      padding: 0 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include if-device(tablet) {
+      padding: 0 50px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include if-device(largephone) {
+      padding: 0 50px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__left {
+      &__logo {
+        font-size: 60px;
+        color: #fff;
+        display: none;
+        @include if-device(desktop) {
+          display: none;
+        }
+
+        @include if-device(tablet) {
+          display: block;
+          font-size: 40px;
+        }
+
+        @include if-device(largephone) {
+          font-size: 40px;
+          display: block;
+        }
+
+        @include if-device(phone) {
+          display: block;
+          font-size: 30px;
+        }
+      }
+    }
+    &__right {
+      width: 50px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      cursor: pointer;
+      @include if-device(desktop) {
+        display: none;
+      }
+
+      @include if-device(tablet) {
+        width: 40px;
+        height: 20px;
+        display: block;
+      }
+
+      @include if-device(largephone) {
+        width: 40px;
+        height: 20px;
+        display: block;
+      }
+
+      @include if-device(phone) {
+        display: block;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+      }
+
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+      width: 100%;
+
+      @include if-device(desktop) {
+        justify-content: center;
+      }
+
+      @include if-device(phone) {
+        display: none;
+      }
+
+      @include if-device(tablet) {
+        display: none;
+      }
+
+      @include if-device(largephone) {
+        display: none;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #fc7a20;
+}
+
+.icon {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+
+  &::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px;
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../../../public/styles/breakpoints";
+
+.banner {
+  background-image: url("../../../assets/testimonialBan.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #db9d0a;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__left {
+    color: #fff;
+    padding: 0 150px;
+    position: absolute;
+    bottom: 30%;
+    @include if-device(desktop) {
+      padding: 0 50px;
+    }
+
+    @include if-device(tablet) {
+      padding: 0 50px;
+    }
+    @include if-device(largephone) {
+      padding: 0 50px;
+    }
+    @include if-device(phone) {
+      padding: 0 20px;
+    }
+
+    & > h2 {
+      font-size: 80px;
+      filter: drop-shadow(2px 3px 1px black);
+      @include if-device(desktop) {
+        font-size: 60px;
+      }
+
+      @include if-device(tablet) {
+        font-size: 60px;
+      }
+      @include if-device(largephone) {
+        font-size: 40px;
+      }
+      @include if-device(phone) {
+        font-size: 40px;
+      }
+    }
+
+    & > p {
+      font-size: 26px;
+      @include if-device(desktop) {
+        font-size: 20px;
+      }
+
+      @include if-device(tablet) {
+        font-size: 20px;
+      }
+      @include if-device(largephone) {
+        font-size: 20px;
+      }
+      @include if-device(phone) {
+        font-size: 20px;
+      }
+    }
+  }
+}

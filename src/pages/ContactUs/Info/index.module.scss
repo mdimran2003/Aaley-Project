@@ -1,0 +1,36 @@
+@import "../../../../public/styles/breakpoints";
+.contactinfo {
+  @include if-device(tablet) {
+    order: 1;
+  }
+  &__det {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include if-device(tablet) {
+      margin-bottom: 50px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include if-device(largephone) {
+      margin-bottom: 50px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include if-device(phone) {
+      margin-bottom: 50px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__add,
+    &__phone,
+    &__email {
+      color: #000;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../../public/styles/breakpoints";
+
+.container {
+  padding: 80px 150px;
+  @include if-device(desktop) {
+    padding: 80px 50px;
+  }
+  @include if-device(tablet) {
+    padding: 50px;
+  }
+  @include if-device(largephone) {
+    padding: 50px;
+  }
+  @include if-device(phone) {
+    padding: 50px 20px;
+  }
+
+  &__courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 60px;
+    flex-wrap: wrap;
+    @include if-device(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include if-device(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include if-device(largephone) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 20px;
+    }
+    @include if-device(phone) {
+      display: flex;
+      gap: 20px 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

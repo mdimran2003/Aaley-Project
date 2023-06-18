@@ -1,0 +1,71 @@
+@import "../../../../public/styles/breakpoints";
+
+.workingHours {
+  &__bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 30px;
+    @include if-device(phone) {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 10px;
+      column-gap: 0;
+    }
+  }
+  &__hours {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+    @include if-device(phone) {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    @include if-device(tablet) {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &__divider {
+      height: 60px;
+      width: 0.5px;
+      background-color: #fff;
+      position: absolute;
+      left: 44%;
+      @include if-device(phone) {
+        transform: rotate(90deg);
+        height: 100px;
+        left: 50px;
+      }
+
+      @include if-device(tablet) {
+        transform: rotate(90deg);
+        height: 100px;
+        left: 50px;
+      }
+    }
+
+    &__left,
+    &__right {
+      width: 50%;
+      @include if-device(phone) {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      @include if-device(tablet) {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      &__link {
+        text-transform: capitalize;
+        margin: 5px 0;
+        color: #fff;
+      }
+    }
+  }
+}

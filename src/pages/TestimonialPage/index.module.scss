@@ -1,0 +1,30 @@
+@import "../../../public/styles/breakpoints";
+
+.container {
+  padding: 0 150px 80px;
+  margin-top: -60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  @include if-device(desktop) {
+    padding: 80px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -150px;
+  }
+
+  @include if-device(tablet) {
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -100px;
+  }
+  @include if-device(largephone) {
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -100px;
+  }
+  @include if-device(phone) {
+    padding: 50px 20px;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -100px;
+  }
+}

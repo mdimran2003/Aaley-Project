@@ -1,0 +1,21 @@
+.astroListArea {
+  padding: 50px 50px;
+  background-color: #fff;
+  font-family: Philosopher;
+  &__tittleArea {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    margin-bottom: 90px;
+    &__searchArea {
+      border: 1px solid #a83601;
+      width: 400px;
+    }
+  }
+  &__astrologerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 100px;
+  }
+}

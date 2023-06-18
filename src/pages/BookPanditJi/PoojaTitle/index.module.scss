@@ -1,0 +1,14 @@
+.poojaTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  & > h2 {
+    font-size: 38px;
+  }
+  &__search {
+    width: 30%;
+    border: 2px solid #cd1a1a;
+  }
+}

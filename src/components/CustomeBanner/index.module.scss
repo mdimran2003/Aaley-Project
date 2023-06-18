@@ -1,0 +1,83 @@
+@import "../../../public/styles/breakpoints";
+.courseBanner {
+  background-image: url("../../assets/enquiryback.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  @include if-device(desktop) {
+    padding: 0 50px;
+  }
+  @include if-device(tablet) {
+    padding: 50px;
+  }
+  @include if-device(largephone) {
+    padding: 30px 50px;
+  }
+  @include if-device(phone) {
+    padding: 50px 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #8e4701;
+    opacity: 0.6;
+  }
+
+  &__left {
+    position: relative;
+    width: 50%;
+    @include if-device(desktop) {
+      width: 70%;
+    }
+    @include if-device(tablet) {
+      width: 100%;
+    }
+    @include if-device(largephone) {
+      width: 100%;
+    }
+    @include if-device(phone) {
+      width: 100%;
+    }
+
+    & > h2 {
+      font-size: 70px;
+      color: #fff;
+      margin-bottom: 20px;
+      @include if-device(largephone) {
+        font-size: 50px;
+      }
+      @include if-device(phone) {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+    }
+
+    & > p {
+      line-height: 30px;
+      font-size: 18px;
+      color: #fff;
+      @include if-device(largephone) {
+        font-size: 16px;
+      }
+      @include if-device(phone) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__right {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+  }
+}

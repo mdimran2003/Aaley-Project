@@ -1,0 +1,28 @@
+.modalArea {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  &__modal {
+    width: 80%;
+    padding: 40px 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    &__heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__service {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 50px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__reportCard {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}

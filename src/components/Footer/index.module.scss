@@ -1,0 +1,34 @@
+@import "../../../public/styles/breakpoints";
+
+.footer {
+  background: #333;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 150px;
+  column-gap: 50px;
+
+  @include if-device(desktop) {
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    padding: 50px;
+  }
+
+  @include if-device(phone) {
+    padding: 30px 20px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+
+  @include if-device(largephone) {
+    padding: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+
+  @include if-device(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    padding: 50px;
+  }
+}

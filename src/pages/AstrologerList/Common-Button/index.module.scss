@@ -1,0 +1,12 @@
+.buttonArea {
+  width: 100%;
+  background-color: #ff7800;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../../../public/styles/breakpoints";
+.subFooter {
+  background: linear-gradient(0, #b54501, #e17800, #b54501);
+  padding: 10px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include if-device(phone) {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  @include if-device(desktop) {
+    padding: 10px 50px;
+  }
+
+  @include if-device(tablet) {
+    padding: 10px 50px;
+  }
+
+  @include if-device(largephone) {
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  & > p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    @include if-device(phone) {
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    &__ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      @include if-device(phone) {
+        flex-wrap: wrap;
+        row-gap: 10px;
+      }
+
+      &__li {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        @include if-device(phone) {
+          height: 30px;
+          width: 30px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

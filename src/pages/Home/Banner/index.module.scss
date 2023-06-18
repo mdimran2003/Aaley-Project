@@ -1,0 +1,311 @@
+@import "../../../../public/styles/breakpoints";
+
+.banner {
+  background-image: url("../../../assets/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+  padding: 50px 100px;
+  z-index: 0;
+
+  @include if-device(desktop) {
+    padding: 50px;
+  }
+
+  @include if-device(tablet) {
+    padding: 50px;
+    height: 712px;
+  }
+
+  @include if-device(largephone) {
+    padding: 50px;
+  }
+
+  @include if-device(phone) {
+    padding: 20px;
+    height: 480px;
+  }
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__top {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    @include if-device(desktop) {
+    }
+
+    &__circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: rgb(205, 26, 26);
+      border: 1px solid #000;
+      @include if-device(desktop) {
+        display: none;
+      }
+
+      @include if-device(tablet) {
+        display: none;
+      }
+
+      @include if-device(largephone) {
+        display: none;
+      }
+
+      @include if-device(phone) {
+        display: none;
+      }
+    }
+
+    &__discount {
+      flex: 1;
+      background-color: #950505;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 70px 0 30px;
+
+      @include if-device(phone) {
+        height: 50px;
+        padding: 0 10px;
+      }
+      @include if-device(largephone) {
+        padding: 0 20px;
+      }
+
+      &__prediction {
+        color: #fff;
+        & > h3 {
+          font-size: 30px;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          @include if-device(phone) {
+            font-size: 16px;
+            margin-bottom: 2px;
+          }
+          @include if-device(largephone) {
+            font-size: 20px;
+            margin-bottom: 2px;
+          }
+        }
+        & > p {
+          @include if-device(phone) {
+            font-size: 10px;
+          }
+          @include if-device(largephone) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__percent {
+        background-color: #fff;
+        border-radius: 20px 0 20px 0;
+
+        & > p {
+          font-weight: 700;
+          font-size: 34px;
+          padding: 10px;
+          letter-spacing: 2px;
+          color: #950505;
+          @include if-device(phone) {
+            font-size: 12px;
+          }
+          @include if-device(largephone) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    &__fb,
+    &__insta,
+    &__twitter {
+      width: 80px;
+      height: 80px;
+      @include if-device(desktop) {
+        display: none;
+      }
+
+      @include if-device(tablet) {
+        display: none;
+      }
+
+      @include if-device(largephone) {
+        display: none;
+      }
+
+      @include if-device(phone) {
+        display: none;
+      }
+
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__bottom {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 330px;
+    width: 100%;
+    margin-top: 50px;
+    column-gap: 30px;
+
+    @include if-device(tablet) {
+      flex-direction: column;
+    }
+
+    @include if-device(largephone) {
+      flex-direction: column;
+    }
+
+    @include if-device(phone) {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    &__banRight {
+      width: 25%;
+      background-color: #ffdfdf;
+      border: 1px solid #950505;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @include if-device(tablet) {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: space-between;
+      }
+
+      @include if-device(largephone) {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: space-between;
+      }
+
+      @include if-device(phone) {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 80px;
+        justify-content: space-between;
+      }
+
+      &__left {
+        & > h4 {
+          font-size: 34px;
+          color: #950505;
+          margin-bottom: 10px;
+          @include if-device(desktop) {
+            font-size: 30px;
+          }
+          @include if-device(tablet) {
+            font-size: 30px;
+          }
+          @include if-device(largephone) {
+            font-size: 30px;
+          }
+
+          @include if-device(phone) {
+            font-size: 25px;
+            margin-bottom: 5px;
+          }
+        }
+
+        &__services {
+          @include if-device(tablet) {
+            display: flex;
+            column-gap: 5px;
+          }
+          & > p {
+            color: #000;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            @include if-device(desktop) {
+              font-size: 16px;
+            }
+            @include if-device(tablet) {
+              font-size: 16px;
+            }
+            @include if-device(largephone) {
+              font-size: 16px;
+            }
+
+            @include if-device(phone) {
+              font-size: 14px;
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+
+      & > img {
+        width: 180px;
+        height: 190px;
+        @include if-device(desktop) {
+          width: 190px;
+          height: 210px;
+        }
+        @include if-device(tablet) {
+          width: 80px;
+          height: 80px;
+        }
+
+        @include if-device(largephone) {
+          width: 80px;
+          height: 80px;
+        }
+
+        @include if-device(phone) {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    &__banLeft {
+      width: 75%;
+      height: 100%;
+      @include if-device(tablet) {
+        width: 100%;
+      }
+
+      @include if-device(largephone) {
+        width: 100%;
+      }
+
+      @include if-device(phone) {
+        width: 100%;
+      }
+
+      & > img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
