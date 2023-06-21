@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import CommonTittle from "../../components/Common-Tittle";
+import CommonHeading from "../../components/Common-heading";
 import AstrologerCard from "./Astrologer-Card";
 import img from "../../assets/astrologer.png";
 import Search from "../../widgets/Search";
@@ -84,7 +84,7 @@ const AstrologerList = () => {
       <div className={Styles.astroListArea}>
         <div className={Styles.astroListArea__tittleArea}>
           <div className={Styles.astroListArea__tittleArea__tittle}>
-            <CommonTittle tittle="Astrologer List" />
+            <CommonHeading tittle="Astrologer List" />
           </div>
           <div className={Styles.astroListArea__tittleArea__searchArea}>
             <Search />
@@ -105,9 +105,9 @@ const AstrologerList = () => {
           })}
         </div>
       </div>
-      {/* <div>
+      <div>
         <PredictionModal />
-      </div> */}
+      </div>
     </>
   );
 };

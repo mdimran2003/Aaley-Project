@@ -7,6 +7,7 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import BookPanditJi from "./pages/BookPanditJi";
 import AstrologerList from "./pages/AstrologerList";
+import IndividualConsultation from "./pages/IndividualConsultation";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about-us" element={<PublicRoute element={<AboutUs />} />} />
           <Route path="/book-pandit-ji" element={<PublicRoute element={<BookPanditJi />} />} />
           <Route path="/astrologer-list" element={<PublicRoute element={<AstrologerList />} />} />
+          <Route path="/individual-consultation" element={<PublicRoute element={<IndividualConsultation />} />} />
         </Routes>
       </Router>
     </>

@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import CommonTittle from "../../components/Common-Tittle";
+import CommonHeading from "../../components/Common-heading";
 import wedding from "../../assets/wedding.png";
 import consulting from "../../assets/consulting (1).png";
 import heart from "../../assets/jigsaw (1).png";
@@ -32,7 +32,7 @@ const PredictionModal = () => {
     <div className={Styles.modalArea}>
       <div className={Styles.modalArea__modal}>
         <div className={Styles.modalArea__modal__heading}>
-          <CommonTittle tittle="Choose Prediction Services" />
+          <CommonHeading tittle="Choose Prediction Services" />
         </div>
         <div className={Styles.modalArea__modal__service}>
           {cardObj.map((item, index) => {
