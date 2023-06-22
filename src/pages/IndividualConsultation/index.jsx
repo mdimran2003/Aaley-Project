@@ -6,6 +6,7 @@ import CommonTab from "../../components/Common-Tabe";
 import CommonTittle from "../../components/common-Tittle";
 import ConsultantItem from "../../components/Consultant-Item";
 import Plane from "../../components/Plane";
+// import IndividualModal from "../../components/Individual-Modal";
 const IndividualConsultation = () => {
   return (
     <div className={Styles.mainContaner}>
@@ -70,6 +71,9 @@ const IndividualConsultation = () => {
           </div>
         </div>
       </div>
+      {/* <div>
+        <IndividualModal />
+      </div> */}
     </div>
   );
 };
