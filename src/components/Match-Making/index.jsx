@@ -1,14 +1,12 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import CommonHeading from "../Common-heading";
+import Button from "../Button/index";
+import PlanCommonHeading from "../Plan-Common-Heading";
+import CopleImg from "../../assets/jigsaw (1).png";
 import CommonInput from "../Common-Input";
-import bigImg from "../../assets/banside.png";
-// import CommonDateField from "../Common-DateField";
-// import CalenderIcon from "../../assets/Group 25225.png";
-import Button from "../Button";
 import CommonTittle from "../common-Tittle";
-import tittleImg from "../../assets/consulting (1).png";
-
+import womanImg from "../../assets/woman (2).png";
+import manImg from "../../assets/Group 939.png";
 const formObj = [
   {
     inputName: "Name",
@@ -51,24 +49,35 @@ const formObj = [
     plaholder: "Contact Number",
   },
 ];
-const IndividualModal = () => {
+const MatchMaking = () => {
   return (
     <div className={Styles.modalArea}>
-      <CommonTittle tittle="Individual Consultant" icon={tittleImg} />
+      <PlanCommonHeading
+        img={CopleImg}
+        leftText="Match Making"
+        middlText="Plan 551 :- Married Life Consultation"
+        rightText="Telephonic Consultation"
+      />
       <div className={Styles.modalArea__modal}>
-        <div className={Styles.modalArea__modal__tittle}>
-          <CommonHeading tittle="Please Fill The Form" />
-        </div>
         <div className={Styles.modalArea__modal__formArea}>
-          <div className={Styles.modalArea__modal__formArea__formInput}>
-            {formObj.map((item) => {
-              return <CommonInput type={item.inputType} placeholder={item.plaholder} />;
-            })}
-            {/* <CommonDateField type="text" placeholder="Date Of Birth" img={CalenderIcon} />  */}
+          <div className={Styles.modalArea__modal__formArea__detail}>
+            <span>
+              <CommonTittle icon={manImg} tittle="Male Details" />
+            </span>
+            <div className={Styles.modalArea__modal__formArea__detail__formField}>
+              {formObj.map((item) => {
+                return <CommonInput type={item.inputType} placeholder={item.inputName} />;
+              })}
+            </div>
           </div>
-          <div className={Styles.modalArea__modal__formArea__formImage}>
-            <div className={Styles.modalArea__modal__formArea__formImage__image}>
-              <img src={bigImg} alt="error" />
+          <div className={Styles.modalArea__modal__formArea__detail}>
+            <span>
+              <CommonTittle icon={womanImg} tittle="Female Details" />
+            </span>
+            <div className={Styles.modalArea__modal__formArea__detail__formField}>
+              {formObj.map((item) => {
+                return <CommonInput type={item.inputType} placeholder={item.inputName} />;
+              })}
             </div>
           </div>
         </div>
@@ -85,4 +94,4 @@ const IndividualModal = () => {
   );
 };
 
-export default IndividualModal;
+export default MatchMaking;

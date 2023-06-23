@@ -8,6 +8,9 @@ import AboutUs from "./pages/AboutUs";
 import BookPanditJi from "./pages/BookPanditJi";
 import AstrologerList from "./pages/AstrologerList";
 import IndividualConsultation from "./pages/IndividualConsultation";
+import IndividualModal from "./components/Individual-Modal";
+import MatchMaking from "./components/Match-Making";
+import MarrideLyfeAnalysis from "./components/MarrideLyfe-Analysis";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/book-pandit-ji" element={<PublicRoute element={<BookPanditJi />} />} />
           <Route path="/astrologer-list" element={<PublicRoute element={<AstrologerList />} />} />
           <Route path="/individual-consultation" element={<PublicRoute element={<IndividualConsultation />} />} />
+          <Route path="/individual-Modal" element={<PublicRoute element={<IndividualModal />} />} />
+          <Route path="/match-making" element={<PublicRoute element={<MatchMaking />} />} />
+          <Route path="/marrideLifeAnalysis" element={<PublicRoute element={<MarrideLyfeAnalysis />} />} />
         </Routes>
       </Router>
     </>

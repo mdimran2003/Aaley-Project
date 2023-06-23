@@ -6,7 +6,44 @@ import CommonTab from "../../components/Common-Tabe";
 import CommonTittle from "../../components/common-Tittle";
 import ConsultantItem from "../../components/Consultant-Item";
 import Plane from "../../components/Plane";
-// import IndividualModal from "../../components/Individual-Modal";
+
+const tabObj = [
+  {
+    tabItem: "Telephonic Consultation",
+  },
+  {
+    tabItem: "Chat Consultation",
+  },
+  {
+    tabItem: "Video Consultation",
+  },
+  {
+    tabItem: "Telephonic Consultation With Report",
+  },
+];
+const planObj = [
+  {
+    plan: "1 Topic Consultation with unlimited questions with remedies.",
+    planeNo: "PLANE 351",
+  },
+  {
+    plan: "1 Topic Consultation with unlimited questions with remedies.",
+    planeNo: "PLANE 351",
+  },
+  {
+    plan: "1 Topic Consultation with unlimited questions with remedies.",
+    planeNo: "PLANE 351",
+  },
+  {
+    plan: "1 Topic Consultation with unlimited questions with remedies.",
+    planeNo: "PLANE 351",
+  },
+  {
+    plan: "1 Topic Consultation with unlimited questions with remedies.",
+    planeNo: "PLANE 351",
+  },
+];
+
 const IndividualConsultation = () => {
   return (
     <div className={Styles.mainContaner}>
@@ -14,18 +51,13 @@ const IndividualConsultation = () => {
         <CommonTittle tittle="Individual Consultation" icon={icon} />
       </div>
       <div className={Styles.mainContaner__tabField}>
-        <span>
-          <CommonTab tabItem="Telephonic Consultation" />
-        </span>
-        <span>
-          <CommonTab tabItem="Chat Consultation" />
-        </span>
-        <span>
-          <CommonTab tabItem="Video Consultation " />
-        </span>
-        <span>
-          <CommonTab tabItem="Telephonic Consultation With Report" />
-        </span>
+        {tabObj.map((item) => {
+          return (
+            <span>
+              <CommonTab tabItem={item.tabItem} />
+            </span>
+          );
+        })}
       </div>
       <div className={Styles.mainContaner__consultaintArea}>
         <div className={Styles.mainContaner__consultaintArea__consultaintItem}>
@@ -54,26 +86,15 @@ const IndividualConsultation = () => {
           </div>
         </div>
         <div className={Styles.mainContaner__consultaintArea__plan}>
-          <div>
-            <Plane plane="1 Topic Consultation with unlimited questions with remedies." planeNo="PLANE 351" />
-          </div>
-          <div>
-            <Plane plane="1 Topic Consultation with unlimited questions with remedies." planeNo="PLANE 351" />
-          </div>
-          <div>
-            <Plane plane="1 Topic Consultation with unlimited questions with remedies." planeNo="PLANE 351" />
-          </div>
-          <div>
-            <Plane plane="1 Topic Consultation with unlimited questions with remedies." planeNo="PLANE 351" />
-          </div>
-          <div>
-            <Plane plane="1 Topic Consultation with unlimited questions with remedies." planeNo="PLANE 351" />
-          </div>
+          {planObj.map((item) => {
+            return (
+              <div>
+                <Plane plane={item.plan} planeNo={item.planeNo} />
+              </div>
+            );
+          })}
         </div>
       </div>
-      {/* <div>
-        <IndividualModal />
-      </div> */}
     </div>
   );
 };

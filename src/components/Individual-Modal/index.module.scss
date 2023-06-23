@@ -3,23 +3,26 @@
   background: transparent;
   display: grid;
   place-items: center;
+  padding: 50px 120px;
   &__modal {
-    width: 85%;
+    width: 100%;
+    background-color: #fff;
     box-shadow: 0 0 10px 10px #c4c4c4;
     padding: 60px 30px;
     border-radius: 10px;
+    margin: 40px 0;
     &__tittle {
       margin-bottom: 30px;
     }
     &__formArea {
-      //   display: grid;
-      //   grid-template-columns: 1fr 1fr 1fr 1fr;
       display: flex;
-      // align-items: center;
       justify-content: space-between;
       column-gap: 40px;
 
       &__formInput {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
         flex: 1;
       }
       &__formImage {
@@ -30,7 +33,7 @@
           height: 240px;
           overflow: hidden;
           position: absolute;
-          bottom: -60px;
+          bottom: -110px;
           right: -20px;
           & > img {
             width: 100%;

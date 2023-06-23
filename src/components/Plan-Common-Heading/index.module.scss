@@ -1,0 +1,25 @@
+.heading {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  &__img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__orangeText {
+    color: #a73500;
+  }
+  &__blueText {
+    color: #222344;
+  }
+  &__maroonText {
+    color: #970505;
+  }
+}
