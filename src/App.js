@@ -11,6 +11,7 @@ import IndividualConsultation from "./pages/IndividualConsultation";
 import IndividualModal from "./components/Individual-Modal";
 import MatchMaking from "./components/Match-Making";
 import MarrideLyfeAnalysis from "./components/MarrideLyfe-Analysis";
+import BirthTimeRectification from "./components/Birth-Time-Rectification";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/individual-Modal" element={<PublicRoute element={<IndividualModal />} />} />
           <Route path="/match-making" element={<PublicRoute element={<MatchMaking />} />} />
           <Route path="/marrideLifeAnalysis" element={<PublicRoute element={<MarrideLyfeAnalysis />} />} />
+          <Route path="/birthTimeRectification" element={<PublicRoute element={<BirthTimeRectification />} />} />
         </Routes>
       </Router>
     </>

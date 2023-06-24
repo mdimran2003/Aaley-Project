@@ -1,0 +1,48 @@
+.modalArea {
+  width: 100%;
+  background: transparent;
+  display: grid;
+
+  padding: 50px 100px;
+  &__modal {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px #c4c4c4;
+    padding: 60px 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+
+    &__formArea {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 40px;
+      &__detail {
+        & > span {
+          color: #3c3c3c;
+          font-size: 20px;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+        &__formField {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 40px;
+        }
+        &__plane {
+          width: 40%;
+          & > div {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+    &__buttonArea {
+      display: flex;
+      align-items: center;
+      column-gap: 80px;
+      & > div {
+        width: 20%;
+      }
+    }
+  }
+}
