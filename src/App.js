@@ -13,6 +13,7 @@ import MatchMaking from "./components/Match-Making";
 import MarrideLyfeAnalysis from "./components/MarrideLyfe-Analysis";
 import BirthTimeRectification from "./components/Birth-Time-Rectification";
 import KundliReport from "./pages/Kundli-Report";
+import TaroCardReading from "./pages/TaroCard-Reading";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/marrideLifeAnalysis" element={<PublicRoute element={<MarrideLyfeAnalysis />} />} />
           <Route path="/birthTimeRectification" element={<PublicRoute element={<BirthTimeRectification />} />} />
           <Route path="/kundali-report" element={<PublicRoute element={<KundliReport />} />} />
+          <Route path="/tarroCard-reading" element={<PublicRoute element={<TaroCardReading />} />} />
         </Routes>
       </Router>
     </>

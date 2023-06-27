@@ -1,0 +1,59 @@
+.readingArea {
+  width: 100%;
+  padding: 50px 100px;
+  &__tittle {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    &__tab {
+      width: 35%;
+      border: 2px solid #444;
+      overflow: hidden;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__TarroDeatailArea {
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #bab7b7;
+    padding: 30px 20px;
+    margin: 40px 0;
+    display: flex;
+    column-gap: 30px;
+    &__formArea {
+      flex: 1;
+      padding: 0 40px 0 0;
+      border-right: 1px solid #444;
+      position: relative;
+      & > h2 {
+        margin: 20px 0;
+      }
+      &__requredform {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+      }
+      &__optinalform {
+        width: 65%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+      }
+      &__cardArea {
+        position: absolute;
+        bottom: 15px;
+        right: 40px;
+        border-radius: 5px;
+        width: 28%;
+        text-align: center;
+      }
+    }
+    &__planeAre {
+      width: 35%;
+      & > div {
+        margin: 42px 0;
+      }
+    }
+  }
+}
