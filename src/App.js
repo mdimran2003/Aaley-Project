@@ -14,6 +14,7 @@ import MarrideLyfeAnalysis from "./components/MarrideLyfe-Analysis";
 import BirthTimeRectification from "./components/Birth-Time-Rectification";
 import KundliReport from "./pages/Kundli-Report";
 import TaroCardReading from "./pages/TaroCard-Reading";
+import PalmReading from "./pages/Palm-Reading";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/birthTimeRectification" element={<PublicRoute element={<BirthTimeRectification />} />} />
           <Route path="/kundali-report" element={<PublicRoute element={<KundliReport />} />} />
           <Route path="/tarroCard-reading" element={<PublicRoute element={<TaroCardReading />} />} />
+          <Route path="/palm-reading" element={<PublicRoute element={<PalmReading />} />} />
         </Routes>
       </Router>
     </>
