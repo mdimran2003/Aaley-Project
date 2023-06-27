@@ -1,0 +1,47 @@
+.modalArea {
+  width: 100%;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  padding: 50px 120px;
+  &__modal {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px #c4c4c4;
+    padding: 60px 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    &__tittle {
+      margin-bottom: 30px;
+    }
+    &__formArea {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 40px;
+
+      &__formInput {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+        flex: 1;
+      }
+      &__dragAndDrop {
+        width: 35%;
+        border: 1px solid black;
+      }
+    }
+    &__buttonArea {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 80px;
+      margin-top: 40px;
+      & > div {
+        width: 30%;
+        text-align: center;
+      }
+    }
+  }
+}

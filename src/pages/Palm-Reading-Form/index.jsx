@@ -1,11 +1,9 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import CommonHeading from "../Common-heading";
-import CommonInput from "../Common-Input";
-import bigImg from "../../assets/banside.png";
-import Button from "../Button";
-import CommonTittle from "../common-Tittle";
+import CommonInput from "../../components/Common-Input/index";
+import CommonTittle from "../../components/common-Tittle/index";
 import tittleImg from "../../assets/consulting (1).png";
+import Button from "../../components/Button/index";
 
 const formObj = [
   {
@@ -23,11 +21,7 @@ const formObj = [
     inputType: "text",
     plaholder: "Gender",
   },
-  {
-    inputName: "Language Of Consultant",
-    inputType: "text",
-    plaholder: "Language Of Consultant",
-  },
+
   {
     inputName: "Date Of Birth",
     inputType: "date",
@@ -49,13 +43,13 @@ const formObj = [
     plaholder: "Contact Number",
   },
 ];
-const IndividualModal = () => {
+const PalmReadingForm = () => {
   return (
     <div className={Styles.modalArea}>
-      <CommonTittle tittle="Individual Consultant" icon={tittleImg} />
+      <CommonTittle tittle="Palm Reading" icon={tittleImg} />
       <div className={Styles.modalArea__modal}>
         <div className={Styles.modalArea__modal__tittle}>
-          <CommonHeading tittle="Please Fill The Form" />
+          <h2>Please Fill The Form</h2>
         </div>
         <div className={Styles.modalArea__modal__formArea}>
           <div className={Styles.modalArea__modal__formArea__formInput}>
@@ -63,18 +57,14 @@ const IndividualModal = () => {
               return <CommonInput type={item.inputType} placeholder={item.plaholder} />;
             })}
           </div>
-          <div className={Styles.modalArea__modal__formArea__formImage}>
-            <div className={Styles.modalArea__modal__formArea__formImage__image}>
-              <img src={bigImg} alt="error" />
-            </div>
-          </div>
+          <div className={Styles.modalArea__modal__formArea__dragAndDrop}>jfdkjfl</div>
         </div>
         <div className={Styles.modalArea__modal__buttonArea}>
           <div>
-            <Button btnName="Cancel" fontSize="20px" backgroundColor="#c4c4c4" borderColor="#c4c4c4" color="#333" />
+            <Button btnName="Cancel" backgroundColor="#d4d4d4" color="#444" fontSize="18px" borderColor="#d4d4d4" />
           </div>
           <div>
-            <Button btnName="Submimt" fontSize="20px" />
+            <Button btnName="Submit" fontSize="18px" />
           </div>
         </div>
       </div>
@@ -82,4 +72,4 @@ const IndividualModal = () => {
   );
 };
 
-export default IndividualModal;
+export default PalmReadingForm;
