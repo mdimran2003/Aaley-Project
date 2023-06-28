@@ -107,6 +107,7 @@ const Booking = () => {
         {cardObj.map((item, index) => {
           return (
             <BookingCard
+              key={index}
               imgSrc={item.img}
               name={item.headig}
               astroType={item.astrType}
