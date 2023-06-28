@@ -2,8 +2,9 @@ import React from "react";
 import Styles from "./index.module.scss";
 import CommonInput from "../../components/Common-Input/index";
 import CommonTittle from "../../components/common-Tittle/index";
-import tittleImg from "../../assets/consulting (1).png";
+import tittleImg from "../../assets/p7.png";
 import Button from "../../components/Button/index";
+import CommonTab from "../../components/Common-Tabe";
 
 const formObj = [
   {
@@ -46,7 +47,14 @@ const formObj = [
 const PalmReadingForm = () => {
   return (
     <div className={Styles.modalArea}>
-      <CommonTittle tittle="Palm Reading" icon={tittleImg} />
+      <div className={Styles.modalArea__tittleArea}>
+        <span>
+          <CommonTittle tittle="Palm Reading" icon={tittleImg} />
+        </span>
+        <span className={Styles.modalArea__tittleArea__tab}>
+          <CommonTab tabItem="Telephonic Consultation " />
+        </span>
+      </div>
       <div className={Styles.modalArea__modal}>
         <div className={Styles.modalArea__modal__tittle}>
           <h2>Please Fill The Form</h2>
@@ -57,7 +65,11 @@ const PalmReadingForm = () => {
               return <CommonInput type={item.inputType} placeholder={item.plaholder} />;
             })}
           </div>
-          <div className={Styles.modalArea__modal__formArea__dragAndDrop}>jfdkjfl</div>
+
+          <div className={Styles.modalArea__modal__formArea__dragAndDrop}>
+            <h2>Sample Images</h2>
+            <div className={Styles.modalArea__modal__formArea__dragAndDrop__dropField}></div>
+          </div>
         </div>
         <div className={Styles.modalArea__modal__buttonArea}>
           <div>

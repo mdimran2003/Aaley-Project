@@ -4,6 +4,19 @@
   display: grid;
   place-items: center;
   padding: 50px 120px;
+  &__tittleArea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    & > span {
+      width: 25%;
+    }
+    &__tab {
+      border: 2px solid #777;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+  }
   &__modal {
     width: 100%;
     background-color: #fff;
@@ -12,7 +25,7 @@
     border-radius: 10px;
     margin: 40px 0;
     &__tittle {
-      margin-bottom: 30px;
+      color: #222;
     }
     &__formArea {
       display: flex;
@@ -24,11 +37,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 40px;
+        padding: 30px 0;
         flex: 1;
       }
       &__dragAndDrop {
         width: 35%;
-        border: 1px solid black;
+
+        & > h2 {
+          color: #222;
+          margin-bottom: 20px;
+        }
+        &__dropField {
+          width: 100%;
+          border: 1px solid rgb(57, 56, 56);
+          padding: 10px 0;
+        }
       }
     }
     &__buttonArea {
