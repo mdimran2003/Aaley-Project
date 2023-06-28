@@ -1,0 +1,38 @@
+.bookingArea {
+  padding: 50px 100px;
+  &__navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    &__tittle {
+      width: 15%;
+    }
+    &__tab {
+      width: 35%;
+      display: flex;
+      align-items: center;
+      border: 2px solid #777;
+      overflow: hidden;
+      border-radius: 30px;
+    }
+    &__searchBar {
+      width: 35%;
+      border: 2px solid #a83601;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+  }
+  &__bookingCardArea {
+    padding: 40px;
+    margin: 40px 0;
+    border: 1px solid #c91145;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 2px #999;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 80px;
+    text-align: center;
+  }
+}

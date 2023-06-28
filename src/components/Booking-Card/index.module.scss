@@ -1,0 +1,64 @@
+.cardArea {
+  text-align: center;
+  border: 1px solid #c91145;
+  padding: 20px;
+  border-radius: 8px;
+  &__cardImg {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  & > h3 {
+    color: #c91145;
+    margin: 10px 0;
+  }
+  &__serviceType {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  &__detail {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 15px 0;
+    color: #444;
+  }
+  &__cardDateTime {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #0a54b6;
+    background-color: #e4e2e2;
+    border-radius: 3px;
+    & > p {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    & > span {
+      font-size: 12px;
+      font-weight: 700;
+      color: #0a54b6;
+    }
+  }
+  &__contact {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: -40px;
+    background-color: #fff;
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
